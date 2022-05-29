@@ -10,7 +10,7 @@ function indexPrime(param1) {
     if(prime == true){
         result.push(i)
     }
-    if(result.length== param1){
+    if(result.length== param1-1){
         break;
     }
   }
