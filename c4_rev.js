@@ -10,10 +10,10 @@ function indexPrime(param1) {
     if(prime == true){
         result.push(i)
     }
-    if(result.length== param1-1){
+    if(result.length== param1){
         break;
     }
   }
-  return result[param1];
+  return result[param1-1];
 }
 console.log(indexPrime(4))
