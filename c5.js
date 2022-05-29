@@ -3,7 +3,7 @@ function stringManipulation(word){
     console.log(word);
 } else {
    let a = word.slice(1)
-   console.log(a + word[0]+ 'nyo')
+   console.log(a + word[0] + 'nyo')
 }
 }
 stringManipulation('ayam')
