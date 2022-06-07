@@ -7,7 +7,7 @@ if (process.argv.length == 2) {
     const readline = require('readline');
     const readFile = require('fs');
     const { argv } = require('process');
-    const data = JSON.parse(readFile.readFileSync('data.json', 'utf-8'))
+    const data = JSON.parse(readFile.readFileSync(process.argv[2], 'utf-8'))
     console.log(data[0].definition)
     const rl = readline.createInterface({
         input: process.stdin,
