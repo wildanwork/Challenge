@@ -182,15 +182,14 @@ ALTER TABLE
     mahasiswa
 ADD
     COLUMN umur integer 
-values
-    18
+
+update mahasiswa set umur = 18
+
 where
     nim = '11421067';
 
-insert into
-    mahasiswa (umur)
-values
-    17
+update
+    mahasiswa set umur = 17
 where
     nim = '11221068';
 
