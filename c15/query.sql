@@ -181,15 +181,18 @@ from
 ALTER TABLE
     mahasiswa
 ADD
-    COLUMN umur integer 
-
-update mahasiswa set umur = 18
-
+    COLUMN umur integer
+update
+    mahasiswa
+set
+    umur = 18
 where
     nim = '11421067';
 
 update
-    mahasiswa set umur = 17
+    mahasiswa
+set
+    umur = 17
 where
     nim = '11221068';
 
@@ -250,11 +253,11 @@ insert into
 values
     ('BW2101', 'Taksonomi Hewan', 3);
 
-\
 insert into
     kontrak (nim, kode_matkul, id_dosen_pengampu, nilai)
 values
-    ('11521067', 'BW2101', '0001', 'AB')
+    ('11521067', 'BW2101', '0001', 'AB');
+
 insert into
     dosen (nid, name)
 values
@@ -320,9 +323,9 @@ where
 
 -- nomor 6 menampilkan jumlah mahasiswa untuk setiap dosen
 select
-    dosen.name,
+     dosen.name,
     dosen.nid,
-    count(mahasiswa.nim) as jumlah_mahasiswa
+    count( distinct kontrak.nim) as jumlah_mahasiswa
 from
     kontrak
     join dosen on kontrak.id_dosen_pengampu = dosen.nid
