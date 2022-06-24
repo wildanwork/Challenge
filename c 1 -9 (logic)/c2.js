@@ -15,4 +15,4 @@ function deretKaskus(n) {
     }
     console.log(x)
 }
-console.log(deretKaskus(10))
+deretKaskus(10)

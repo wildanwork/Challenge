@@ -1,3 +1,5 @@
+//harusnya pake try catch
+
 if (process.argv.length == 2) {
 
     console.log("tolong sertakan nama file sebagai inputan soalnya\n Misalnya 'node c12.js data.json'")
@@ -19,38 +21,33 @@ if (process.argv.length == 2) {
 
     rl.prompt()
     rl.on('line', (input) => {
-        input.trim()
-       
-        if (input.toLowerCase() == data[x].term) {
-            console.log('selamat anda benar!')
-            x++
-            if (x == data.length) {
-                console.log('Anda Beruntung! \n Anda Berhasil')
-                rl.close()
+            input.trim()
+
+            if (input.toLowerCase() == data[x].term) {
+                console.log('selamat anda benar!')
+                x++
+                if (x == data.length) {
+                    console.log('Anda Beruntung! \n Anda Berhasil')
+                    rl.close()
+                }
+                i = 1;
+                console.log(data[x].definition)
+                rl.prompt()
+            } else if (input.toLocaleLowerCase() == 'skip') {
+                data.push(data[x])
+                console.log(data[x + 1].definition)
+                x++
+                rl.prompt()
+            } else {
+                console.log(`Anda Kurang Beruntung! anda telah salah ${i} kali, silakan coba lagi`)
+                i++
+                rl.prompt()
             }
-            i = 1;
-            console.log('itu', data[x].definition)
-            rl.prompt()
-        } else if (input.toLocaleLowerCase() == 'skip') {
-            data.push(data[x])
-            console.log(data[x + 1].definition)
-            x++
-            rl.prompt()
+
+
         }
 
-
-        else {
-            console.log(`Anda Kurang Beruntung! anda telah salah ${i} kali, silakan coba lagi`)
-            i++
-            rl.prompt()
-        }
-
-        
-    }
-    
-    ).on('close',function(){
+    ).on('close', function() {
         process.exit(0)
     })
 }
-
-

@@ -328,7 +328,7 @@ select
     count( distinct kontrak.nim) as jumlah_mahasiswa
 from
     kontrak
-    join dosen on kontrak.id_dosen_pengampu = dosen.nid
+    join dosen on kontrak.id_dosen_pengampu = dosen.nidm’at di awal waktu, maka ia seperti berqurban dengan u
     join mahasiswa on mahasiswa.nim = kontrak.nim
 group by
     dosen.nid;
@@ -401,3 +401,6 @@ where
     or kontrak.nilai = 'E'
 order by
     mahasiswa.name desc;
+
+    -- cara nampilin umur biar tahun depan umur berubah
+    ALTER TABLE mahasiswa update 
