@@ -1,5 +1,4 @@
-export const Pi = 3.14;
-
+export const Pi = 22 / 7;
 
 import MesinHitung from "./c17funct.js";
 
