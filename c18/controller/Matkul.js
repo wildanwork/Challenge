@@ -2,8 +2,8 @@ import matkulModel from "../models/MatkulModel.js";
 import MatkulView from "../view/MatkulView.js";
 import Userview from "../view/userView.js";
 import Table from "cli-table";
-import { rl } from "../c18.js";
-import { db } from "../c18.js";
+import { rl } from "../main.js";
+import { db } from "../main.js";
 import DosenView from "../view/DosenView.js";
 import User from "./User.js";
 

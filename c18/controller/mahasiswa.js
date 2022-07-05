@@ -1,8 +1,8 @@
 import MahasiswaModel from "../models/MahasiswaModel.js";
 import MahasiswaView from "../view/MahasiswaView.js";
 import Userview from "../view/userView.js";
-import { rl } from "../c18.js";
-import { db } from "../c18.js";
+import { rl } from "../main.js";
+import { db } from "../main.js";
 import sqlite3 from "sqlite3";
 import Table from "cli-table";
 import User from "./User.js";

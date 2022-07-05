@@ -2,7 +2,7 @@ import kontrakView from "../view/KontrakView.js";
 import Table from "cli-table";
 import sqlite3 from "sqlite3";
 import KontrakModel from "../models/KontrakModel.js";
-import { rl } from "../c18.js";
+import { rl } from "../main.js";
 import Userview from "../view/userView.js";
 import User from "./User.js";
 import DosenView from "../view/DosenView.js";

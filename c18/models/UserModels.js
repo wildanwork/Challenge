@@ -1,4 +1,4 @@
-import { db } from "../c18.js";
+import { db } from "../main.js";
 export default class UserModels {
     static login(answer, callback) {
         const sql = "SELECT * FROM users where username = ?";

@@ -1,5 +1,5 @@
 import sqlite3 from "sqlite3";
-import { db } from "../c18.js";
+import { db } from "../main.js";
 export default class JurusanModel {
 
     static daftar(callback) {

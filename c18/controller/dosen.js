@@ -1,7 +1,7 @@
 import DosenView from "../view/DosenView.js";
 import Userview from "../view/userView.js";
-import { db } from "../c18.js";
-import { rl } from "../c18.js";
+import { db } from "../main.js";
+import { rl } from "../main.js";
 import DosenModel from "../models/DosenModel.js";
 import Table from "cli-table";
 import User from "./User.js";

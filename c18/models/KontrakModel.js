@@ -1,4 +1,4 @@
-import { db } from "../c18.js";
+import { db } from "../main.js";
 import sqlite3 from "sqlite3";
 export default class KontrakModel {
     static daftar(callback) {

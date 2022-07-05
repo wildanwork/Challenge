@@ -1,4 +1,4 @@
-import { db } from "../c18.js";
+import { db } from "../main.js";
 export default class MahasiswaModel {
     static daftarMahasiswa(callback) {
         db.all("select * from mahasiswa", (err, rows) => {

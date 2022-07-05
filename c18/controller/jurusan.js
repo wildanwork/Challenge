@@ -4,7 +4,7 @@ import JurusanView from "../view/JurusanView.js";
 import Userview from "../view/userView.js";
 import User from "./User.js";
 import Table from "cli-table";
-import { rl } from "../c18.js";
+import { rl } from "../main.js";
 
 export default class jurusan {
     static menuJurusan() {

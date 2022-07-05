@@ -1,7 +1,7 @@
 import UserModels from "../models/UserModels.js"
 import Userview from "../view/userView.js"
 import mahasiswa from "./mahasiswa.js"
-import { rl } from "../c18.js"
+import { rl } from "../main.js"
 import jurusan from "./jurusan.js"
 import dosen from "./dosen.js"
 import JurusanView from "../view/JurusanView.js"
